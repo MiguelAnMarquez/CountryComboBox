@@ -79,7 +79,7 @@ function showCountryData() {
     Row1.appendChild(td)
 
     td = document.createElement('td');
-    hText = document.createTextNode(countries[select.value].capital[1]);
+    hText = document.createTextNode(Object.values(countries[select.value].capital)[0]);
     td.appendChild(hText)
     Row1.appendChild(td)
 
